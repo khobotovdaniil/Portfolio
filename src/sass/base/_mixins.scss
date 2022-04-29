@@ -11,3 +11,9 @@
         z-index: -1;
     }
 }
+
+@mixin yellow_divider {
+    width: 60px;
+    height: 2px;
+    background-color: $main-color;
+}

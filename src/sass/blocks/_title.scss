@@ -14,4 +14,10 @@
     &_fz48 {
         font-size: 48px;
     }
+    &_circle {
+        position: relative;
+        z-index: 2;
+        padding-left: 10px;
+        @include before_circle;
+    }
 }
