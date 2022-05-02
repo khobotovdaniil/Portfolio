@@ -1,0 +1,85 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+    }
+    &__divider {
+        margin: 0 auto;   
+        @include yellow_divider;          
+    }
+    &__wrapper {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            @include before_circle;
+            &:before {
+                width: 15px;
+                height: 15px;
+                top: 6px;
+                left: -7px;
+            }
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    top: -17px;
+                    left: 0px;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 45px;
+            background-color: #000;
+            top: 68px;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+        &-icon {
+            position: absolute;
+            top: 50px;
+            left: 45px;
+            @include before_circle;
+            img {
+                position: absolute;
+                left: 15px;
+                top: 15px;
+            }
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+        &-body {
+            padding-left: 43px;
+            padding-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
