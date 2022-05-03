@@ -6,7 +6,8 @@
         display: grid;
         grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 350px);
         grid-auto-rows: 45px;
-        gap: 15px 315px;
+        justify-content: space-between;
+        row-gap: 15px;
     }
     &__item {
         display: grid;

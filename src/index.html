@@ -131,7 +131,11 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <picture>
+                        <source media="(max-width: 575px)" srcset="img/main_photo-min.jpg">
+                        <source media="(min-width: 576px)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="about__text">
                     <div class="title title_fz16 title_circle">Про меня</div>
@@ -389,10 +393,10 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio">
+    <section class="portfolio">
         <div class="container">
             <div class="title title_fz16 title_circle title_circle-mid">Портфолио</div>
-            <h2 class="title portfolio__title">Мои работы</h2>
+            <h2 class="title title_fz36 portfolio__title">Мои работы</h2>
             <div class="divider"></div>
 
             <div class="portfolio__wrapper">
@@ -416,9 +420,9 @@
                 </a>
             </div>            
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="prices">
+    <section class="prices">
         <div class="container">
             <div class="title title_fz16 title_circle title_circle-mid">Прайс-лист</div>
             <div class="divider"></div>
@@ -468,9 +472,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -478,7 +482,7 @@
                 </div>
                 <div class="contacts__descr">
                     <div class="title title_fz16 title_circle contacts__subtitle">Контакты</div>
-                    <h2 class="title contacts__title">Свяжитесь со мной</h2>
+                    <h2 class="title title_fz36 contacts__title">Свяжитесь со мной</h2>
                     <div class="contacts__divider"></div>
                     <div class="title title_fz14 contacts__text">Любым удобным для вас способом:</div>
                     <div class="contacts__social">
@@ -518,7 +522,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>    
 </body>
