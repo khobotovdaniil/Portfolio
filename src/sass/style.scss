@@ -11,7 +11,15 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
+    margin-bottom: 0;
+}
+
+h4 {
     margin-bottom: 0;
 }
 
@@ -35,3 +43,5 @@ p {
 @import 'blocks/resume';
 @import 'blocks/skills';
 @import 'blocks/portfolio';
+@import 'blocks/prices';
+@import 'blocks/contacts';
