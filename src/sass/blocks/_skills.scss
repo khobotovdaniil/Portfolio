@@ -1,0 +1,65 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        margin-top: 10px;
+        text-align: center;
+    }
+    &__divider {
+        margin: 0 auto;
+        margin-top: 25px;
+        @include yellow_divider;
+    }
+    &__wrapper {
+        display: grid;
+        margin-top: 60px;
+        padding: 0 10px;
+        grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+    }
+    &__item {
+        padding: 30px 30px 25px;
+        border: 1px solid #000000;
+        &-img {
+            height: 66px;
+            display: flex;
+            align-items: center;
+        }
+        h4 {
+            margin-top: 20px;
+        }
+        &-desc {
+            margin-top: 15px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__raitings {
+        margin-top: 125px;
+        display: grid;
+        grid-template: repeat(2, 70px) / repeat(3, 350px);
+        gap: 30px 45px;
+        &-header {
+            padding-top: 7px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_counter {
+            font-size: 14px;
+        }
+        &-line {
+            margin-top: 27px;
+            width: 350px;
+            height: 14px;
+            border-radius: 4px;
+            background: #E8E4DE;
+            span {
+                display: block;
+                width: 350px;
+                height: 14px;
+                border-radius: 4px;
+                background: #FFA501;
+            }
+        }
+    }
+}
