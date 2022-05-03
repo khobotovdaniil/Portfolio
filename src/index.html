@@ -447,7 +447,7 @@
                 </div>
                 <div class="prices__item">
                     <h4 class="title title_fz14">Android/IOS Приложение</h4>
-                    <div class="prices__price">от 36000 руб.</div>
+                    <div class="prices__price">от 46000 руб.</div>
                     <p class="prices__descr">
                         Приложение для смартфона любой ОС
                     </p>
@@ -496,19 +496,23 @@
                     
                     <form class="contacts__form" action="#">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="btn contacts__btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html" rel="noopener noreferrer">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
