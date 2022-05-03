@@ -15,6 +15,12 @@ p {
     margin-bottom: 0;
 }
 
+.divider {
+    margin: 0 auto;
+    margin-top: 25px;
+    @include yellow_divider;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -28,3 +34,4 @@ p {
 @import 'blocks/about';
 @import 'blocks/resume';
 @import 'blocks/skills';
+@import 'blocks/portfolio';

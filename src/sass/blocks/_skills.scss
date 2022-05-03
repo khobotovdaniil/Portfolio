@@ -4,11 +4,6 @@
         margin-top: 10px;
         text-align: center;
     }
-    &__divider {
-        margin: 0 auto;
-        margin-top: 25px;
-        @include yellow_divider;
-    }
     &__wrapper {
         display: grid;
         margin-top: 60px;
