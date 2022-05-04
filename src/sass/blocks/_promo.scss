@@ -2,6 +2,7 @@
     min-height: 100vh;
     position: relative;
     background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    filter: grayscale(20%);
     padding-top: 205px;
     &__title {
         width: 535px;
