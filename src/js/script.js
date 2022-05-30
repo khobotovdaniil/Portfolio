@@ -1,46 +1,55 @@
-    //menu
+//menu
 const hamburger = document.querySelector('.hamburger'),
-    menu = document.querySelector('.menu'),
-    closeElem = document.querySelector('.menu__close');
+  menu = document.querySelector('.menu'),
+  closeElem = document.querySelector('.menu__close'),
+  overlay = document.querySelector('.menu__overlay');
 
 hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
+  menu.classList.add('active');
 });
 
 closeElem.addEventListener('click', () => {
+  menu.classList.remove('active');
+});
+
+menu.addEventListener('click', event => {
+  if (event.target === overlay) {
     menu.classList.remove('active');
+  }
 });
 
-    //raitings
+//raitings
 const counters = document.querySelectorAll('.skills__raitings-counter'),
-    lines = document.querySelectorAll('.skills__raitings-line span');
+  lines = document.querySelectorAll('.skills__raitings-line span');
 
-counters.forEach( (item, i) => {
-    lines[i].style.width = item.innerHTML;
+counters.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
 });
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-    //Smooth scroll and pageup
-  $(window).scroll(function() {
+  //Smooth scroll and pageup
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 1200) {
       $('.pageup').fadeIn();
     } else $('.pageup').fadeOut();
   });
 
-  $("a[href^='#up']").click(function() {
+  $("a[href^='#up']").click(function () {
     const _href = $(this).attr("href");
-    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-    return false;  
+    $("html, body").animate({
+      scrollTop: $(_href).offset().top + "px"
+    });
+    return false;
   });
 
-  $("#form").validate ({
+  $("#form").validate({
     rules: {
       name: {
         required: true,
         minlength: 3
-      },  
+      },
       email: {
         required: true,
         email: true
